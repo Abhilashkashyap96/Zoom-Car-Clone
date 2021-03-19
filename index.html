@@ -8,6 +8,7 @@
     <title>Self Drive Car Rentals In Bangalore</title>
   </head>
   <body>
+    <!-- Navigation bar -->
     <nav id="navbar">
       <div id="logo">
         <img src="./Images/logo.png" alt="Zoomcar_logo" />
@@ -27,7 +28,6 @@
       <h1 class="h-primary center">DRIVE IN A SANITISED ZOOMCAR</h1>
       <p>Self Drive Car Rental in <span>Bangalore</span></p>
       <div>
-        <span></span>
         <a
           href="https://www.zoomcar.com/bangalore/search"
           title="Start your wonderful journey"
@@ -36,6 +36,8 @@
       </div>
       <!-- 2nd Section -->
     </section>
+
+    <!-- 2nd Section -->
     <section id="services-container">
       <h1 class="h-primary center">THE ZOOMCAR ADVANTAGE</h1>
       <p class="p-primary">
@@ -114,12 +116,16 @@
 
     <!-- 3rd Section -->
     <section id="section_three">
-      <div id="opacity">
-        <div class="logo_image"></div>
+      <div id="section_three_bg_image">
+        <div class="opacity"></div>
       </div>
-      <h2>SUPERMILER CLUB</h2>
-      <p>Premium club which rewards you everytime you drive with us</p>
-      <div class="dashed">SUPERMILER PRIVILEGES</div>
+      <div class="content">
+        <div class="logo_image"></div>
+        <h2>SUPERMILER CLUB</h2>
+        <p>Premium club which rewards you everytime you drive with us</p>
+        <div class="dashed">SUPERMILER PRIVILEGES</div>
+      </div>
+
       <div id="sceond_part_of_section_three">
         <div class="coin">
           <div class="coin_image"></div>
@@ -130,25 +136,471 @@
           booking and redeem for <br />
           additional discount
         </p>
-        <div class="section_three_btn">
-          <a title="Loyality">Learn More</a>
+        <div id="section_three_btn">
+          <button type="button" id="btn">Learn More</button>
         </div>
       </div>
     </section>
 
     <!-- 4th Section -->
     <section id="section_four">
-      <div class="bg_img">
-        <h2>A CAR FOR EVERY NEED</h2>
-        <p>
+      <div class="header">
+        <h2 class="section_four_heading">A CAR FOR EVERY NEED</h2>
+        <p class="section_four_first_p">
           We have a range of cars, so something will perfectly fit your trip
         </p>
       </div>
-      <span class="arrow_left left"></span>
-      <span class="arrow_right right"></span>
-      <p class="sec_four_last_p">A quick drive to sunrise point</p>
+      <div id="carousel">
+        <span class="arrow_left left" onclick="plusSlides(-1)"></span>
+        <div class="slideshow" style="display: block;"!important>
+          <!-- Section four Slideshow container -->
+          <div class="slide_img">
+            <img src="./Images/section_four_1st_car_img.png" alt="Image">
+            <div class="details">
+              <h1>Hatchback</h1>
+              <p class="price">Price Starting at ₹ 70/hr (Fuel Free)</p>
+              <p class="group">CARS AVAILABLE: FORD FIGO, MARUTI SWIFT, BALENO, MAHINDRA KUV 100, MARUTI RITZ, HYUNDAI I20 ELITE, JAZZ SMT 1.5 IDTEC, THE RAPTOR, GRAND I10</p>
+            </div>
+          </div>
+          <p class="last">A quick drive to sunrise point</p>
+        </div>
+        <div class="slideshow">
+          <!-- Section four Slideshow container -->
+          <div class="slide_img">
+            <img src="./Images/section_four_2nd_car_img.png" alt="Image">
+            <div class="details">
+              <h1>SEDAN</h1>
+              <p class="price">Price Starting at ₹ 95/hr (Fuel Free)</p>
+              <p class="group">CARS AVAILABLE: HONDA AMAZE, HONDA CITY, MARUTI CIAZ, FORD ASPIRE, MARUTI CIAZ MT</p>
+            </div>
+          </div>
+          <p class="last">Grab dinner and a movie</p>
+        </div>
+        <div class="slideshow">
+          <!-- Section four Slideshow container -->
+          <div class="slide_img">
+            <img src="./Images/section_four_3rd_img.png" alt="Image">
+            <div class="details">
+              <h1>SUV</h1>
+              <p class="price">Price Starting at ₹ 100/hr (Fuel Free)</p>
+              <p class="group">CARS AVAILABLE: FORD ECOSPORT, MAHINDRA SCORPIO, MAHINDRA XUV, FORD ENDEAVOUR, HYUNDAI CRETA, TOYOTA FORTUNER</p>
+            </div>
+          </div>
+          <p class="last">Head outstation with the entire family</p>
+        </div>
+        <div class="slideshow">
+          <!-- Section four Slideshow container -->
+          <div class="slide_img">
+            <img src="./Images/section_four_4th_img.png" alt="Image">
+            <div class="details">
+              <h1>LUXURY</h1>
+              <p class="price">Price Starting at ₹ 240/hr (Fuel Free)</p>
+              <p class="group">CARS AVAILABLE: MERCEDES GLA, AUDI Q3</p>
+            </div>
+          </div>
+          <p class="last">Go out for a special meal</p>
+        </div>
+        <span class="arrow_right right" onclick="plusSlides(1)"></span>
+      </div>
     </section>
 
+    <!-- 5th Section -->
+    <section id="section_five">
+      <div class="section_five_heading">
+        <h2 class="heading">HOW ZOOMCAR WORKS</h2>
+        <p class="heading">
+          Drive yourself to an adventure and back in 5 simple steps
+        </p>
+      </div>
+      <!-- Cards -->
+      <div id="section_five_cards">
+        <!-- Section five card 1 -->
+        <div id="section_five_card_one">
+          <div class="book">
+            <img src="./Images/5th_section_book.svg" alt="Zoom Image" />
+            <h2>BOOK</h2>
+            <p>Search for and book a car on our site!</p>
+          </div>
+        </div>
+        <!-- Section five card 2 -->
+        <div id="section_five_card_two">
+          <div class="upload">
+            <img src="./Images/5th_section_upload.svg" alt="Upload Image" />
+            <h2>UPLOAD LICENSE</h2>
+            <p>
+              Upload your driver’s license, and pay a small security deposit.
+            </p>
+          </div>
+        </div>
+        <!-- Section five card 3 -->
+        <div id="section_five_card_three">
+          <div class="unlock">
+            <img src="./Images/5th_section_unlock.png" alt="Unlock Image" />
+            <h2>UNLOCK</h2>
+            <p>
+              We SMS your car details 20 minutes before pickup. Unlock it via
+              the Zoomcar app.
+            </p>
+          </div>
+        </div>
+        <!-- Section five card 4 -->
+        <div id="section_five_card_four">
+          <div class="zoom">
+            <img src="./Images/5th_section_zoom.svg" alt="Zoom Image" />
+            <h2>ZOOM</h2>
+            <p>
+              Fill the start checklist in the Zoomcar app. Grab the keys from
+              the glove-box and drive.
+            </p>
+          </div>
+        </div>
+        <!-- Section five card 5 -->
+        <div id="section_five_card_five">
+          <div class="return">
+            <img src="./Images/5th_section_refresh.svg" alt="Return Image" />
+            <h2>RETURN</h2>
+            <p>
+              Return the car to the same location and fill the end checklist to
+              end your trip.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button type="button" id="btn">SIGN UP</button>
+    </section>
+
+    <!-- 6th Section -->
+    <section id="section_six">
+      <div id="container">
+        <h2>ZOOM ON THE GO!</h2>
+        <p>
+          Make a booking, unlock your car, and end your <br />
+          reservation all from our app
+        </p>
+        <div id="store_image">
+          <img
+            id="google"
+            src="./Images/section_six_google_play.png"
+            alt="Google Play"
+          />
+          <img
+            id="apple"
+            src="./Images/section_six_apple_store.png"
+            alt="Apple Store"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 7th Section -->
+    <section id="section_seven">
+      <div id="container">
+        <div id="rides">
+          <img src="./Images/section_seven_rides.svg" alt="Image" />
+          <div>3,000+</div>
+          <p>Rides Daily</p>
+        </div>
+        <div id="users">
+          <img src="./Images/section_seven_users.svg" alt="Image" />
+          <div>48,00,000+</div>
+          <p>Happy users</p>
+        </div>
+        <div id="travel">
+          <img src="./Images/section_seven_travel.svg" alt="Image" />
+          <div id="number">36,00,00,000+</div>
+          <p>Km Travelled</p>
+          <div id="p"><p>(enough for 470 round trips to the moon!)</p></div>
+        </div>
+        <div id="zoomcars">
+          <img src="./Images/section_seven_zoom_cars.svg" alt="Image" />
+          <div>6,500+</div>
+          <p>Number of Zoomcars</p>
+        </div>
+        <div id="rates">
+          <img src="./Images/section_seven_rates.svg" alt="Image" />
+          <div id="r">Rating 4.7/5.0</div>
+          <p>Rated by 3,00,000+ customers</p>
+          <div id="book"><p>over 10,00,000+ bookings</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8th Section -->
+    <section id="section_eight">
+      <div id="bg_img">
+        <img id="head_img" src="./Images/section_eight_heading_image.png" alt="Image" />
+
+        <div id="carousel">
+          <span class="arrow_left left" onclick="secondPlusSlides(-1)"></span>
+          <div class="testimony" style="display: block;"!important>
+            <p>I could not believe my ears on the benefits, especially the reimbursement of fuel. I would surely continue to use your professional services in months to come.</p>
+            <div class="name">- D. Samuel</div>
+          </div>
+          <div class="testimony">
+            <p>Appreciate the totally new welcome Concept. As an prospective customer, I feel this is going to really set an example in car rentals scenery. Wishing you the very Best and come out in flying colors!!</p>
+            <div class="name">- Yekula Santosh</div>
+          </div>
+          <div class="testimony">
+            <p>The experience with Zoomcar has been excellent. Your process is well thought out and the service definitely fills a void. Maybe you could start a school which teaches "real customer service"!</p>
+            <div class="name">- Sunil Rastogi</div>
+          </div>
+          <div class="testimony">
+            <p>I have loved your concept since the time I saw it online. Now, after using your services, this concept is wonderful and a delight to all customers. A service in other major cities would go a long way in establishing your brand as well as loyalty of customers.</p>
+            <div class="name">- Rohit R</div>
+          </div>         
+          <span class="arrow_right right" onclick="secondPlusSlides(1)"></span>
+        </div>
+      </div>
+      <div id="press">
+        <span class="left_arrow" onclick="carousel(-1)"></span>
+        <div class="press_img" id="one" style="display: block;"!important></div>
+        <div class="press_img" id="two"></div>
+        <!-- <div class="press_img" id="two">
+          <img src="./Images/carousel_set_time_out.png" alt="Image">
+        </div>
+        <div class="press_img" id="three">
+          <img src="./Images/carousel_set_time_out.png" alt="Image">
+        </div>
+        <div class="press_img" id="four">
+          <img src="./Images/carousel_set_time_out.png" alt="Image">
+        </div>
+        <div class="press_img" id="five">
+          <img src="./Images/carousel_set_time_out.png" alt="Image">
+        </div>
+        <div class="press_img" id="six">
+          <img src="./Images/carousel_set_time_out.png" alt="Image">
+        </div>
+        <div class="press_img" id="seven">
+          <img src="./Images/Carousel_Section_Eight_ET_Now.png" alt="Image">
+        </div>
+        <div class="press_img" id="eight">
+          <img src="./Images/Carousel_section_eight_live_mint.png" alt="Image">
+        </div>
+        <div class="press_img" id="nine">
+          <img src="./Images/Carousel_section_eight_Your_Story.png" alt="Image">
+        </div> -->
+        <span class="right_arrow" onclick="carousel(1)"></span>
+      </div>
+    </section>
+
+    <!-- 9th Section -->
+    <section id="section_nine">
+      <div id="outer_div">
+        <div id="inner_div">
+          <a href="" class="footer_top">
+            <img
+              src="./Images/footer_top_1st_image.svg"
+              alt="Image"
+              class="image"
+            />
+            <p>How zoomcar works?</p>
+          </a>
+          <a href="" class="footer_top">
+            <img
+              src="./Images/footer_top_2nd_image.svg"
+              alt="Image"
+              class="image"
+            />
+            <p>Policies</p>
+          </a>
+          <a href="" class="footer_top">
+            <img
+              src="./Images/footer_top_3rd_image.svg"
+              alt="Image"
+              class="image"
+            />
+            <p>Help Support</p>
+          </a>
+          <a href="" class="footer_top">
+            <img
+              src="./Images/footer_top_4th_image.svg"
+              alt="Image"
+              class="image"
+            />
+            <p>Zoom in Safety</p>
+          </a>
+        </div>
+        <!-- 9th Scetion 2nd part -->
+      </div>
+      <div id="page_links">
+        <h4>About Us</h4>
+        <ul>
+          <li>
+            <a href="">Zoomcar Team</a>
+          </li>
+          <li>
+            <a href="">Zoomcar Subscription</a>
+          </li>
+          <li>
+            <a href=""> Zoomcar Blog</a>
+          </li>
+          <li>
+            <a href=""> Careers @ Zoomcar</a>
+          </li>
+          <li>
+            <a href="">Locations & Cars</a>
+          </li>
+          <li>
+            <a href="">Self Drive Cars</a>
+          </li>
+          <li>
+            <a href=""> Invest via OurCrowd</a>
+          </li>
+        </ul>
+        <h4>Cities</h4>
+        <ul>
+          <li><a href="">Self cars in Bangalore</a></li>
+          <li><a href="">Self cars in Pune</a></li>
+          <li><a href="">Self cars in Delhi</a></li>
+          <li><a href="">Self cars in Mumbai</a></li>
+          <li><a href="">Self cars in Chennai</a></li>
+          <li><a href="">Self cars in Hyderabad</a></li>
+          <li><a href="">Self cars in Chandigarh</a></li>
+          <li><a href="">Self cars in Kolkata</a></li>
+          <li><a href="">Self cars in Ahmedabad</a></li>
+          <li><a href="">Self cars in Coimbatore</a></li>
+          <li><a href="">Self cars in Indore</a></li>
+          <li><a href="">Self cars in Jaipur</a></li>
+          <li><a href="">Self cars in Ludhiana</a></li>
+          <li><a href="">Self cars in Mangalore-Manipal</a></li>
+          <li><a href="">Self cars in Mysore</a></li>
+          <li><a href="">Self cars in Vizag</a></li>
+          <li><a href="">Self cars in Nagpur</a></li>
+          <li><a href="">Self cars in Kochi</a></li>
+          <li><a href="">Self cars in Udaipur</a></li>
+          <li><a href="">Self cars in Vijayawada</a></li>
+          <li><a href="">Self cars in Surat</a></li>
+          <li><a href="">Self cars in Siliguri</a></li>
+          <li><a href="">Self cars in Lucknow</a></li>
+          <li><a href="">Self cars in Guwahati</a></li>
+          <li><a href="">Self cars in Bhubaneswar</a></li>
+          <li><a href="">Self cars in Hassan</a></li>
+          <li><a href="">Self cars in Vadodara</a></li>
+          <li><a href="">Self cars in Trivandrum</a></li>
+        </ul>
+        <h4>Airport Services</h4>
+        <ul>
+          <li><a href="">Car rental form Bangalore Airport</a></li>
+          <li><a href="">Car rental form Pune Airport</a></li>
+          <li><a href="">Car rental form Delhi Airport</a></li>
+          <li><a href="">Car rental form Mumbai Airport</a></li>
+          <li><a href="">Car rental form Chennai Airport</a></li>
+          <li><a href="">Car rental form Hyderabad Airport</a></li>
+          <li><a href="">Car rental form Chandigarh Airport</a></li>
+          <li><a href="">Car rental form Kolkata Airport</a></li>
+          <li><a href="">Car rental form Ahmedabad Airport</a></li>
+          <li><a href="">Car rental form Coimbatore Airport</a></li>
+          <li><a href="">Car rental form Indore Airport</a></li>
+          <li><a href="">Car rental form Jaipur Airport</a></li>
+          <li><a href="">Car rental form Vizag Airport</a></li>
+          <li><a href="">Car rental form Udaipur Airport</a></li>
+          <li><a href="">Car rental form Surat Airport</a></li>
+          <li><a href="">Car rental form Lucknow Airport</a></li>
+          <li><a href="">Car rental form Guwahati Airport</a></li>
+        </ul>
+        <hr />
+        <div id="social">
+          <h4>Let's Keep in Touch</h4>
+          <p id="p_top">
+            7th Floor, Tower-B, Diamond District, 150, HAL Airport Road,
+            Kodihalli, Bangalore – 560008
+          </p>
+          <div id="media">
+            <a href="">
+              <img src="./Images/footer_fb_icon.svg" alt="Facebook" />
+            </a>
+            <a href="">
+              <img src="./Images/footer_twitter_icon.svg" alt="Twitter" />
+            </a>
+            <a href="">
+              <img src="./Images/footer_instagram_icon.svg" alt="Instagram" />
+            </a>
+            <a href="">
+              <img src="./Images/footer_youtube_icon.svg" alt="Youtube" />
+            </a>
+            <a href="">
+              <img src="./Images/footer_blog_icon.svg" alt="Blog" />
+            </a>
+            <a href="">
+              <img src="./Images/footer_linkedin_icon.svg" alt="LinkedIn" />
+            </a>
+          </div>
+          <p id="p_bottom">
+            © Copyright 2017 Zoomcar India Private Ltd. All rights reserved.
+          </p>
+        </div>
+      </div>
+    
+     <div id="footer_end">
+      <div id="footer_inner">
+        <h3>
+          <b>LOOKING FOR SELF DRIVE CARS IN BANGALORE?</b>
+        </h3>
+        <p>
+          Bangalore being a burgeoning cosmopolitan city is witnessing a shift
+          in culture. With youngsters now being able to establish an equal focus
+          on work and leisure frequent road trips have now become a norm. In
+          addition to this, the added pleasure of a self-driving has given rise
+          in the demand for, self-drive car rentals which has emerged as the
+          answer to many of their prayers.
+        </p>
+        <h3>
+          <b>HOW MUCH DOES IT COST TO RENT A CAR FOR A DAY?</b>
+        </h3>
+        <p>
+          If want to rent one out a self-drive car, choose Zoomcar, where you
+          can pick out your self-drive car based on your travelling needs. While
+          small self-drive cars allow you to easily manoeuvre through city
+          traffic, sedans and SUV’s offer more comfort. Affordable prices
+          starting at 60/hr helps you rent a car easily. Whether you want to go
+          on a road trip from Bangalore to Coorg or just need a car to travel
+          within the city the self-drive Zoomcar are your best solution. All
+          Self-drive Zoomcar comes with a limited liability, enabling you to
+          enjoy the comfort of a four-wheeler without having to invest in one,
+          with the added benefit of not having to actually drive it. The
+          Self-drive Zoomcar have even made travel to and from the airport easy.
+          Avoid exorbitantly priced Bangalore airport cabs by choosing to travel
+          in a Zoomcar instead. The Bangalore airport even has a Zoomcar parking
+          lot where you can get a self-drive car rental as soon as you get off
+          your flight, thus eliminating the time taken to look for a cab or hire
+          one.
+        </p>
+        <h3>
+          <b>WHAT STATES ALLOW SELF DRIVING CARS?</b>
+        </h3>
+        <p>
+          Drive seamlessly: Our Self-Drive cars come with all India permits,
+          Road-Side Assistance (RSA), vehicle insurance and provision of
+          multiple parking sites across the city. 
+  
+          Book Through the App: No
+          matter how long you need our Self Drive cars for you can conveniently
+          hire a Self-Drive car online in Bangalore through the Zoomcar app.
+  
+          Array of services: 
+          Enjoy tech-enabled booking, tracking and
+          hassle-free payment options too. Make every special occasion memorable
+          by opting to ride in a luxury self-drive car yourself. You could opt
+          for it just for the sheer pleasure and experience too!
+        </p>
+        <h3>
+          <b>STEPS FOR SELF DRIVE CAR BOOKING IN BANGALORE</b>
+        </h3>
+        <p>
+          Drive across the city hassle free with a self-drive car from Zoomcar in the following steps:
+        </p>
+        <ul id="ul">
+          <li>Download the Zoomcar App from the Play Store or the App Store.</li>
+          <li>Search for a car from the wide range available and book a self-drive car of your choice</li>
+          <li>Upload License and pay a small security deposit</li>
+          <li>Car details will be sent on SMS 20mins before pickup. Unlock it via the Zoomcar App</li>
+          <li>Fill the start checklist in the Zoomcar App. Grab the keys from the glove box and zoom away </br>
+            After the trip, return the car and fill the end checklist from the App to end your trip. We refund your deposit if applicable <br/>
+            Book, Drive, Repeat. Zoom On.</li>
+        </ul>
+      </div>
+     </div>  
+    </section>
     <script src="index.js"></script>
   </body>
 </html>
